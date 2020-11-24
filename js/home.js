@@ -1,15 +1,27 @@
 require.config({
-    paths:{
+    paths: {
         "jquery" : "jquery-3.5.1",
-        "slide" : "slide"
+        "slide" : "slide",
+        "load" : "load",
+        "back" : "back"
     },
-    shim:{
+    shim: {
         "parabola" : {
             exports : "_",
         }
     }
 })
 
-require(["slide"], function (slide){
+require([
+    "slide",
+    "load",
+    "back"
+], function (slide, load, back){
+    slide.next(),
+    slide.prev(),
     slide.carousel();
+
+    load.loading();
+
+    back.back();
 })

@@ -86,14 +86,17 @@ main .bg-main{
     background: #fe5341;
 }
 
-.hot-test .title{
+.title{
+    position: relative;
     padding: 18px 0 16px;
     font-size: 20px;
     font-weight: bold;
+    color: #474747;
 }
 
 .focus {
     position: relative;
+    padding-bottom: 20px;
 }
 
 .focus .prev,.focus .next{
@@ -130,21 +133,40 @@ main .bg-main{
     /* position: absolute; */
     float: left;
     width: 1000px;
-    height: 295px;
 }
 
-.slide-box .box1{
-    background-color: aqua;
+.slide-box li::after{
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    visibility: hidden;
 }
 
-.slide-box .on{
-    z-index: 20;
+.title .more{
+    position: absolute;
+    right: 0;
+    top: 22px;
+    font-size: 14px;
+    color: #fd6959;
+    padding-right: 17px;
+    background: url(../images/readMore.png) no-repeat right 7px;
 }
 
-.slide-box .box2{
-    background-color: aquamarine;
+.back{
+    display: block;
+    position: fixed;
+    left: 1309.5px;
+    top: 304px;
+    width: 50px;
+    height: 50px;
+    line-height: 999px;
+    overflow: hidden;
+    background: url(../images/back.png) no-repeat #e8e8e8  center center;
+    border-radius: 8px;
+    transition: background 0.1s ease-in;
 }
 
-.slide-box .box3{
-    background-color: brown;
+.back:hover{
+    background-color: #c6c6c6;
 }

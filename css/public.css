@@ -115,12 +115,13 @@ nav ul li:hover a {
     transition: 0.2s linear;
     width: 50px;
     height: 30px;
-    margin-top: 23px;
-    border: 1px solid #fe5341;
-    border-radius: 3px;
+    font-size: 16px;
     color: #fe5341;
     line-height: 30px;
     text-align: center;
+    margin-top: 23px;
+    border: 1px solid #fe5341;
+    border-radius: 3px;
 }
 
 .right{
@@ -147,10 +148,269 @@ nav ul li:hover a {
     transform: scale(1.1);
 }
 
-main{
-    height: 2304px;
+.red,.use ul .red,.use ul .red span,.sq span{
+    color: #fe5341;
 }
 
-footer{
-    
+.green,.use ul .green,.use ul .green span{
+    color: #80c269;
+}
+
+.use ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.use ul li{
+    position: relative;
+    width: 220px;
+    height: 286px;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.use ul li a{
+    display: block;
+}
+
+.use ul li:hover img{
+    animation: fade 1s linear infinite;
+}
+
+img{
+    vertical-align: top;
+}
+
+.use .shoufa{
+    background-color: #fe5341; 
+}
+
+.use .top-tip{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    line-height: 22px;
+    color: #f5e8e8;
+    padding: 0 8px;
+    border-radius: 0 0 0 6px;
+}
+
+.use .tys{
+    background-color: #fbf4cb;
+    color: #c4a96a;
+}
+
+.test-con{
+    padding: 8px 8px 14px;
+    text-align: center;
+}
+
+.test-con .name{
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.test-con .tabs{
+    padding: 6px 0;
+}
+
+.test-con .red span{
+    border: 1px solid #fe5341;
+}
+
+.test-con .green span{
+    border: 1px solid #80c269;
+}
+
+.test-con .tabs span{
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.test-con .sq{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.use .test-con .time{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.bg-col{
+    background-color: #f7f7f7;
+}
+
+.common ul{
+    padding-bottom: 20px;
+}
+
+.common .team li{
+    height: 231px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.common li .info{
+    padding: 7px 10px 10px;
+}
+
+.common .info .name{
+    font-size: 14px;
+    height: 45px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.common .info .tip{
+    color: #a3a3a3;
+    padding: 13px 0;
+}
+
+.tip .right span{
+    display: inline-block;
+    padding-left: 14px;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.zan{
+    background: url(../images/zan.png) no-repeat left;
+}
+
+.talk{
+    background: url(../images/reply.png) no-repeat left;
+}
+
+.heart{
+    background: url(../images/xin.png) no-repeat left;
+}
+
+.common .team .line{
+    /* padding-bottom: 20px; */
+    background: url(../images/listbg.jpg) no-repeat left bottom;
+    background-size: 221px 19px;
+}
+
+.common .team img{
+    border-radius: 6px 6px 0 0;
+}
+
+.tip::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.common .team ul li{
+    overflow: visible;
+}
+
+.guide .team ul li{
+    height: 225px;
+    margin-bottom: 35px;
+}
+
+.info .name span{
+    display: block;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.common .info .tip .price{
+    font-size: 14px;
+    color: #fe5341;
+}
+
+.load{
+    text-align: center;
+    font-size: 16px;
+    color: #a3a3a3;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.load .load-btn{
+    padding-left: 24px;
+    color: #fe5341;
+    background: url(../images/more.png) no-repeat left;
+}
+
+.team .load .loading{
+    background: url(../images/loading-icon.gif) no-repeat left;
+}
+
+.foot{
+    background: #505050;
+    color: #a3a3a3;
+    padding: 40px 0 15px;
+}
+
+.foot .fix>ul>li{
+    float: left;
+    padding-left: 22px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.foot .fix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.foot .fix ul li a{
+    color: #a3a3a3;
+}
+
+.foot .fix ul li h2{
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.foot .fix>ul>li:nth-child(1){
+    padding-left: 0;
+}
+
+.foot .fix>ul>li:nth-child(2){
+    width: 140px;
+}
+
+.foot .fix li p{
+    line-height: 20px;
+}
+
+.foot .fix>ul>li:nth-child(2) p:last-child{
+    padding-top: 13px;
+} 
+
+.foot .fix>ul>li:nth-child(3){
+    width: 100px;
+}
+
+.foot .fix>ul>li:nth-child(4){
+    width: 140px;
+}
+
+.foot .fix>ul>li:nth-child(4) a{
+    display: inline-block;
+    width: 69px;
+}
+
+.foot .fix>ul>li:nth-child(5){
+    width: 148px;
+}
+
+.copy{
+    padding-top: 80px;
+    font-size: 13px;
+    text-align: center;
 }
