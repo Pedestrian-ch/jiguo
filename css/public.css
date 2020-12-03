@@ -112,7 +112,7 @@ nav ul li:hover a {
 }
 
 .wrap .register{
-    transition: 0.2s linear;
+    transition:(background,color) 0.2s linear;
     width: 50px;
     height: 30px;
     font-size: 16px;
@@ -139,7 +139,7 @@ nav ul li:hover a {
 }
 
 .search .icon{
-    transition: 0.08s ease;
+    transition: transform 0.08s ease;
     font-size: 33px;
     color: #666;
 }
@@ -245,6 +245,7 @@ img{
 
 .bg-col{
     background-color: #f7f7f7;
+    overflow: hidden;
 }
 
 .common ul{
@@ -353,59 +354,53 @@ img{
     padding: 40px 0 15px;
 }
 
-.foot .fix>ul>li{
+.foot .ft-con>ul>li{
     float: left;
     padding-left: 22px;
     font-size: 13px;
     line-height: 20px;
 }
 
-.foot .fix::after{
-    display: block;
-    content: "";
-    clear: both;
-}
-
-.foot .fix ul li a{
+.foot .ft-con ul li a{
     color: #a3a3a3;
 }
 
-.foot .fix ul li h2{
+.foot .ft-con ul li h2{
     font-size: 16px;
     color: #fff;
     padding-bottom: 25px;
 }
 
-.foot .fix>ul>li:nth-child(1){
+.foot .ft-con>ul>li:nth-child(1){
     padding-left: 0;
 }
 
-.foot .fix>ul>li:nth-child(2){
+.foot .ft-con>ul>li:nth-child(2){
     width: 140px;
 }
 
-.foot .fix li p{
+.foot .ft-con li p{
     line-height: 20px;
 }
 
-.foot .fix>ul>li:nth-child(2) p:last-child{
+.foot .ft-con>ul>li:nth-child(2) p:last-child{
     padding-top: 13px;
 } 
 
-.foot .fix>ul>li:nth-child(3){
+.foot .ft-con>ul>li:nth-child(3){
     width: 100px;
 }
 
-.foot .fix>ul>li:nth-child(4){
+.foot .ft-con>ul>li:nth-child(4){
     width: 140px;
 }
 
-.foot .fix>ul>li:nth-child(4) a{
+.foot .ft-con>ul>li:nth-child(4) a{
     display: inline-block;
     width: 69px;
 }
 
-.foot .fix>ul>li:nth-child(5){
+.foot .ft-con>ul>li:nth-child(5){
     width: 148px;
 }
 
@@ -413,4 +408,117 @@ img{
     padding-top: 80px;
     font-size: 13px;
     text-align: center;
+}
+
+/* 帮助中心css */
+.about{
+    margin: 50px auto;
+}
+
+.about .help{
+    position: sticky;
+    top: 0px;
+    width: 270px;
+}
+
+.about .grawBg{
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 25px 20px;
+}
+
+.about .help .grawBg h2{
+    padding-left: 18px;
+}
+
+.about h2{
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 900;
+    color: #444;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.about .grawBg .iframe{
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 10px 18px;
+}
+
+.about .grawBg .iframe a{
+    color: #535353;
+}
+
+.about .grawBg .iframe div a{
+    font-weight: bold;
+}
+
+.about .grawBg .iframe ul{
+    padding-left: 15px;
+}
+
+.about .help-con{
+    width: 700px;
+}
+
+.about .help-con .grawBg{
+    padding: 25px 33px;
+}
+
+.text{
+    color: #535353;
+    font-size: 16px;
+}
+
+.help-con .text h3{
+    font-size: 16px;
+    padding: 25px 0 20px;
+    font-weight: bold;
+}
+
+.help-con .text p{
+    line-height: 1.8;
+}
+
+.help-con .text h5{
+    color: #474747;
+    font-size: 20px;
+    padding: 18px 0 16px;
+    font-weight: bold;
+}
+
+
+/* 附页公共css */
+.branch-head h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 34px 0 30px;
+}
+
+.branch-head div{
+    text-align: center;
+    line-height: 1.7;
+    font-size: 0;
+}
+
+.branch-head div a{
+    display:inline-block;
+    width: 165px;
+    font-size: 18px;
+    color: #a3a3a3;
+    padding-bottom: 12px;
+}
+
+.branch-head div .on{
+    color: #fe5431;
+    padding-bottom: 8px;
+    border-bottom: 4px solid #fe5431;
+}
+
+.padt25{
+    padding-top: 25px;
+}
+
+.padb25{
+    padding-bottom: 25px;
 }

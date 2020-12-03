@@ -1,42 +1,42 @@
-[
+guideMore([
 	[
-		{"img":"img/kuwan01.jpg","text":"3":"￥499"},
-		{"img":"img/kuwan01.jpg","text":"3":"￥498"},
-		{"img":"img/kuwan01.jpg","text":"3":"￥497"},
-		{"img":"img/kuwan01.jpg","text":"3":"￥496"},
-		{"img":"img/kuwan01.jpg","text":"3":"￥495"},
-		{"img":"img/kuwan01.jpg","text":"3":"￥494"},
-		{"img":"img/kuwan01.jpg","text":"3":"￥493"},
-		{"img":"img/kuwan01.jpg","text":"3":"￥493"}
+		{"img":"../images/hot3.jpg","text":"Liquid Image 338 运动摄像眼镜"},
+		{"img":"../images/hot4.jpg","text":"巴慕达 The Toaster 烤面包机"},
+		{"img":"../images/hot5.jpg","text":"Osprey小鹰户外运动专业腰包"},
+		{"img":"../images/hot6.jpg","text":"空气净化器里面学问多得惊呆你，你选对了吗？"},
+		{"img":"../images/hot1.jpg","text":"怎么骑都不会累的智能自行车：云马 C1试骑体验"},
+		{"img":"../images/hot2.jpg","text":"声音不是最优秀，但它形音完美的结合，足够打动人心"},
+		{"img":"../images/hot7.jpg","text":"风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器"},
+		{"img":"../images/hot8.jpg","text":"到底有没有完美的iPhone手机配件，答案都在这里"}
 	],
 	[
-		{"img":"img/kuwan02.jpg","text":"3","price":"￥1247"},
-		{"img":"img/kuwan02.jpg","text":"3","price":"￥1246"},
-		{"img":"img/kuwan02.jpg","text":"3","price":"￥1245"},
-		{"img":"img/kuwan02.jpg","text":"3","price":"￥1244"},
-		{"img":"img/kuwan02.jpg","text":"3","price":"￥1243"},
-		{"img":"img/kuwan02.jpg","text":"3","price":"￥1242"},
-		{"img":"img/kuwan02.jpg","text":"3","price":"￥1241"},
-		{"img":"img/kuwan02.jpg","text":"3","price":"￥1248"}
+		{"img":"../images/g3.jpg","text":"Liquid Image 338 运动摄像眼镜"},
+		{"img":"../images/g4.jpg","text":"巴慕达 The Toaster 烤面包机"},
+		{"img":"../images/g1.jpg","text":"Osprey小鹰户外运动专业腰包"},
+		{"img":"../images/g2.jpg","text":"空气净化器里面学问多得惊呆你，你选对了吗？"},
+		{"img":"../images/k1.jpg","text":"怎么骑都不会累的智能自行车：云马 C1试骑体验"},
+		{"img":"../images/k2.jpg","text":"声音不是最优秀，但它形音完美的结合，足够打动人心"},
+		{"img":"../images/k4.jpg","text":"风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器"},
+		{"img":"../images/k3.jpg","text":"到底有没有完美的iPhone手机配件，答案都在这里"}
 	],
 	[
-		{"img":"img/kuwan03.jpg","text":"3","price":"￥36000"},
-		{"img":"img/kuwan03.jpg","text":"3","price":"￥36001"},
-		{"img":"img/kuwan03.jpg","text":"3","price":"￥36003"},
-		{"img":"img/kuwan03.jpg","text":"3","price":"￥36003"},
-		{"img":"img/kuwan03.jpg","text":"3","price":"￥36004"},
-		{"img":"img/kuwan03.jpg","text":"3","price":"￥36005"},
-		{"img":"img/kuwan03.jpg","text":"3","price":"￥36006"},
-		{"img":"img/kuwan03.jpg","text":"3","price":"￥36007"}
+		{"img":"../images/re3.jpg","text":"Liquid Image 338 运动摄像眼镜"},
+		{"img":"../images/re4.jpg","text":"巴慕达 The Toaster 烤面包机"},
+		{"img":"../images/re1.jpg","text":"Osprey小鹰户外运动专业腰包"},
+		{"img":"../images/re2.jpg","text":"空气净化器里面学问多得惊呆你，你选对了吗？"},
+		{"img":"../images/hot12.jpg","text":"怎么骑都不会累的智能自行车：云马 C1试骑体验"},
+		{"img":"../images/hot9.jpg","text":"声音不是最优秀，但它形音完美的结合，足够打动人心"},
+		{"img":"../images/hot10.jpg","text":"风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器"},
+		{"img":"../images/hot11.jpg","text":"到底有没有完美的iPhone手机配件，答案都在这里"}
 	],
 	[
-		{"img":"img/kuwan04.jpg","text":"3","price":"￥13301"},
-		{"img":"img/kuwan04.jpg","text":"3","price":"￥13303"},
-		{"img":"img/kuwan04.jpg","text":"3","price":"￥13303"},
-		{"img":"img/kuwan04.jpg","text":"3","price":"￥13304"},
-		{"img":"img/kuwan04.jpg","text":"3","price":"￥13305"},
-		{"img":"img/kuwan04.jpg","text":"3","price":"￥13306"},
-		{"img":"img/kuwan04.jpg","text":"4","price":"￥13307"},
-		{"img":"img/kuwan04.jpg","text":"4","price":"￥13308"}
+		{"img":"../images/k1.jpg","text":"Liquid Image 338 运动摄像眼镜"},
+		{"img":"../images/k3.jpg","text":"巴慕达 The Toaster 烤面包机"},
+		{"img":"../images/g1.jpg","text":"Osprey小鹰户外运动专业腰包"},
+		{"img":"../images/g3.jpg","text":"空气净化器里面学问多得惊呆你，你选对了吗？"},
+		{"img":"../images/hot1.jpg","text":"怎么骑都不会累的智能自行车：云马 C1试骑体验"},
+		{"img":"../images/hot5.jpg","text":"声音不是最优秀，但它形音完美的结合，足够打动人心"},
+		{"img":"../images/hot7.jpg","text":"风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器"},
+		{"img":"../images/hot2.jpg","text":"到底有没有完美的iPhone手机配件，答案都在这里"}
 	]
-]
+])

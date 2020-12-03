@@ -67,7 +67,7 @@ html{
 .clearfix:before,
 .clearfix:after{
   content: " ";
-  display: inline-block;
+  display: block;
   height: 0;
   clear: both;
   visibility: hidden;

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="shortcut icon" href="images/favicon_01.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2159780_2uim98aupfh.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script>
+        /**表单验证是否密码相同**/
+        function check(form){
+            var p1 = form.password1;
+            var p2 = form.password2;
+            if (p1.value != p2.value) {
+                p2.oninvalid();
+                return false;
+            }
+            return true;
+        }
+    
+        window.onload = function() {
+            var p2 = document.forms["my_f1"].password2;
+            p2.oninvalid = function() {
+                this.setCustomValidity("密码不一致，请重新输入");
+            }
+            p2.oninput = function() {
+                this.setCustomValidity("");
+            }
+    
+        }
+    
+        $(function(){
+            /**获取验证码 倒计时**/
+            var wait = 60;
+            function yzm(){
+                if(wait==0){
+                    $(".getCode").text("获取验证码");
+                    wait = 60;
+                }else{
+                    wait--;
+                    $(".getCode").text(wait+"秒后重新发送");
+                    setTimeout(function(){yzm();},1000);
+                }
+            }
+            $(".getCode").click(function(){
+                yzm();
+            });
+        });
+     </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap clearfix">
+            <div class="logo left">
+                <h1><a href="./index.html">极果商城</a></h1>
+            </div>
+
+            <nav class="left">
+                <ul>
+                    <li class="on"><a href="./index.html">首页</a></li>
+                    <li><a href="./play/index.html">酷玩</a></li>
+                    <li><a href="./guide/index.html">导购</a></li>
+                    <li><a href="./use/index.html">试用</a></li>
+                    <li><a href="./inform/index.html">报告</a></li>
+                </ul>
+            </nav>
+
+            <a class="register right" href="register.html">注册</a>
+            <span class="search right">
+                <a class="icon iconfont icon-search" href="#"></a>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-col padt25 padb25">
+            <div class="regist wrap">
+                <h2 class="title">注册极果</h2>
+
+                <form class="regForm" name="my_f1" action="" method="post" onsubmit="return check(this);">
+                    <p><input type="text" placeholder="请输入登录手机号" required name="tel" pattern="^1[34578][0-9]{9}$"></p>
+                    <p><input type="text" placeholder="请输入图片校验码" required name="imgCode"><img src="./images/imgCode.jpg"
+                            width="132" height="35"></p>
+                    <p><input type="text" placeholder="请输入4位数字验证码" required name="code" pattern="^\d{4}$"><a
+                            href="javascript:void(0)" class="getCode">获取验证码</a></p>
+                    <p><input type="text" placeholder="请输入用户名" required name="username"></p>
+                    <p><input type="password" placeholder="请输入新密码" required name="password1"></p>
+                    <p><input type="password" placeholder="确认新密码" required name="password2"></p>
+                    <p><button id="submit">立即注册</button></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <section class="wrap">
+            <div class="ft-con clearfix">
+                <ul>
+                    <li>
+                        <img src="./images/code.png" width="160" height="160">
+                    </li>
+                    <li>
+                        <h2><img src="./images/logoImg.jpg"></h2>
+                        <p>全球酷玩试用导购平台
+                            酷·新奇·好玩·品质</p>
+                        <p>微信添加“JguoJguo”
+                            获取我们的服务。</p>
+                    </li>
+                    <li>
+                        <h2>免费试用</h2>
+                        <p><a href="try.html#step">试用流程</a></p>
+                        <p><a href="try.html#raise">如何提高成功率</a></p>
+                    </li>
+                    <li>
+                        <h2>友情链接</h2>
+                        <ul>
+                            <li>
+                                <a href="https://zhidx.com/">智东西</a><a href="http://weibusi.107cine.com/">WEIBUSI</a>
+                            </li>
+                            <li>
+                                <a href="https://it.sohu.com/">搜狐IT</a><a href="https://new.qq.com/ch/tech/">腾讯科技</a>
+                            </li>
+                            <li>
+                                <a href="http://digi.it.sohu.com/">搜狐数码</a><a href="https://tech.ifeng.com/">凤凰科技</a>
+                            </li>
+                            <li>
+                                <a href="http://tech.ifeng.com/digi/">凤凰数码</a><a
+                                    href="https://www.pconline.com.cn/">PConline</a>
+                            </li>
+                            <li>
+                                <a href="http://www.pcpop.com/">泡泡网</a><a href="https://www.3wcoffee.com/">3W咖啡</a>
+                            </li>
+                            <li>
+                                <a href="https://club.lenovo.com.cn/phone">ZUK社区</a><a
+                                    href="http://www.emie.com/">亿觅emie</a>
+                            </li>
+                            <li>
+                                <a href="http://www.geekpark.net/">极客公园</a><a href="">易迅易启玩</a>
+                            </li>
+                            <li>
+                                <a href="http://www.guoku.com/">果库</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>购买攻略</h2>
+                        <ul>
+                            <li><a href="#">美亚海淘教程</a></li>
+                            <li><a href="#">日亚海淘教程</a></li>
+                            <li><a href="#">海淘转运攻略</a></li>
+                            <li><a href="#">kickstarter 众筹购买攻略</a></li>
+                            <li><a href="#">indiegogo 众筹购买攻略</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>厂商合作</h2>
+                        <ul>
+                            <li><a href="about.html#about">关于极果</a></li>
+                            <li><a href="about.html#connect">联系我们</a></li>
+                            <li><a href="mailto:BD@jiguo.com">商务合作：BD@jiguo.com</a></li>
+                            <li><a href="mailto:CEO@jiguo.com">CEO邮箱：CEO@jiguo.com</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="copy">© 2016 极果版权所有</p>
+        </section>
+    </footer>
+</body>
+
+</html>

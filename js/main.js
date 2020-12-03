@@ -3,7 +3,7 @@ require.config({
         "jquery" : "jquery-3.5.1",
         "slide" : "slide",
         "load" : "load",
-        "back" : "back"
+        "back" : "back",
     },
     shim: {
         "parabola" : {
@@ -15,13 +15,16 @@ require.config({
 require([
     "slide",
     "load",
-    "back"
-], function (slide, load, back){
-    slide.next(),
-    slide.prev(),
-    slide.carousel();
+    "back",
+], function (slide, load, back,){
+    // slide.next(),
+    // slide.prev(),
+    // slide.carousel();
+    slide.start();
 
     load.loading();
 
-    back.back();
+    back.start();
+    // back.backScroll();
+    // back.backTop();
 })
